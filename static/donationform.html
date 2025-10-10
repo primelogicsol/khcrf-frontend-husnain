@@ -1572,6 +1572,7 @@ body {
             })
           });
 
+          
           if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
           const data = await response.json();
           if (!data.order) throw new Error("Order data not found in response");
